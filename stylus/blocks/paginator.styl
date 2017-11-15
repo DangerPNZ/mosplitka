@@ -1,0 +1,74 @@
+.paginator
+  padding 13px 0 0 0
+  display flex
+  justify-content space-between
+
+.paginator__page-nav
+  display flex
+  justify-content space-between
+  width 110px
+
+.paginator__step-back,
+.paginator__step-forward
+  position relative
+  width 10px
+  height 10px
+  cursor pointer
+
+.paginator__step-back::before
+  content ""
+  display block
+  position absolute
+  top 3px
+  width 7px
+  height 7px
+  transform rotate(-225deg)
+  border-right 3px solid dark-text
+  border-bottom 3px solid dark-text
+
+.paginator__step-forward::before
+  content ""
+  display block
+  position absolute
+  top 3px
+  width 7px
+  height 7px
+  transform rotate(-45deg)
+  border-right 3px solid dark-text
+  border-bottom 3px solid dark-text
+
+.paginator__step-back:hover::before,
+.paginator__step-forward:hover::before
+  border-color carrot
+
+.paginator__page-position
+  Roboto(400, 13px)
+  color dark-text
+  text-transform uppercase
+
+.paginator-items
+  display flex
+  a
+    position relative
+    margin-right 20px
+    Roboto(400, 12px)
+    text-transform uppercase
+    color dark-text
+
+  .paginator__active-filter
+    color carrot
+
+  .paginator__expanded
+    padding-right 10px
+
+    &::before
+      content ""
+      display block
+      width 5px
+      height 5px
+      position absolute
+      top 3px
+      right -7px
+      transform rotate(45deg)
+      border-right 2px solid carrot
+      border-bottom 2px solid carrot

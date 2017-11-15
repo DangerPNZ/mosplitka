@@ -1,0 +1,148 @@
+.main-slider
+  position relative
+  width 100%
+
+.main-slider__arrows-switch
+  display flex
+  justify-content space-between
+  position absolute
+  top 120px
+  left 50%
+  width 1085px
+  margin-left -542.5px
+
+.main-slider__arrow
+  position relative
+  width 50px
+  height 50px
+  cursor pointer
+
+  &--left::before
+    content ""
+    position absolute
+    top 22px
+    left 10px
+    display block
+    width 20px
+    height 20px
+    border-top 5px solid #fff
+    border-right 5px solid #fff
+    transform rotate(-135deg)
+
+  &:hover&--left::before
+    border-top 5px solid carrot
+    border-right 5px solid carrot
+
+  &--right::before
+    content ""
+    position absolute
+    top 22px
+    right 10px
+    display block
+    width 20px
+    height 20px
+    border-top 5px solid #fff
+    border-right 5px solid #fff
+    transform rotate(45deg)
+
+  &:hover&--right::before
+    border-top 5px solid carrot
+    border-right 5px solid carrot
+
+.main-slider__bullets-switch
+  display flex
+  justify-content center
+  width 100%
+  position absolute
+  bottom 0
+  padding 18px 0
+  background rgba(0, 0, 0, 0.3)
+
+  input
+    margin 0 3px
+
+.main-slider__slide
+  display flex
+  flex-direction column
+  align-items center
+  width 100%
+  height 335px
+  padding 52px 0 0 0
+  background #a48e80 url(/img/slide-1bg.jpg)
+
+.main-slider__slide-heading
+  Roboto(300, 22px)
+  text-transform uppercase
+  color #fff
+
+.main-slider__slide-descript
+  margin-top 40px
+  letter-spacing 1.8px
+  Roboto(normal, 20px)
+  line-height 24px
+  color #fff
+
+.main-slider__links-container{
+  display flex
+  justify-content space-between
+  width 470px
+  margin-top 45px
+  margin-right: 35px
+}
+.main-slider__option
+  display inline-block
+  position relative
+  padding 11px 78px 11px 34px
+  Roboto(normal, 13px)
+  letter-spacing 1.8px
+  line-height 26px
+  text-transform uppercase
+
+  &--view-link
+    color #fff
+    border 1px solid #fff
+    &::before
+      content ""
+      position absolute
+      top 0
+      right 45px
+      display block
+      width 1px
+      height 49px
+      background #fff
+    &::after
+      content ""
+      position absolute
+      top 20px
+      right 21px
+      display block
+      width 7px
+      height 7px
+      border-top 3px solid #fff
+      border-right 3px solid #fff
+      transform rotate(45deg)
+
+  &--full-catalog-link
+    background #fff
+    color #000
+
+    &::before
+      content ""
+      position absolute
+      top 0
+      right 45px
+      display block
+      width 1px
+      height 50px
+      background #d0e3f0
+    &::after
+      content ""
+      position absolute
+      top 20px
+      right 21px
+      display block
+      width 7px
+      height 7px
+      border-top 3px solid carrot
+      border-right 3px solid carrot
+      transform rotate(45deg)

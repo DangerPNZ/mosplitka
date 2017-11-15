@@ -1,0 +1,63 @@
+.extra-menu
+  display flex
+  padding-bottom 90px
+  width 100%
+
+.extra-menu__item
+  flex-direction column
+  width 33.3%
+
+.extra-menu__bg-container
+  width 100%
+  height 406px
+
+.extra-menu__descript
+  display flex
+  margin-top 40px
+  text-align center
+  Roboto(normal, 12px)
+  text-transform uppercase
+  color #1e1e1e
+  div
+    position relative
+    margin 0 auto
+
+.extra-menu__item
+  &--become-a-dealer
+    .extra-menu__descript
+      div
+        &::before
+          content ""
+          display block
+          width 19px
+          height 14px
+          position absolute
+          top 1px
+          left -30px
+          background url(/img/sprites/spritesheet.png) -5px -183px
+
+  &--storage-photo
+    .extra-menu__descript
+      div
+        &::before
+          content ""
+          display block
+          width 19px
+          height 14px
+          position absolute
+          top -1px
+          left -30px
+          background url(/img/sprites/spritesheet.png) -5px -364px
+
+  &--see-catalog
+    .extra-menu__descript
+      div
+        &::before
+          content ""
+          display block
+          width 16px
+          height 16px
+          position absolute
+          top -1px
+          left -30px
+          background url(/img/sprites/spritesheet.png) -5px -388px

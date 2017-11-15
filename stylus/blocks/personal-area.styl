@@ -1,0 +1,74 @@
+.personal-area
+  width 100%
+  padding 24px 0 8px 0
+
+.personal-area__inner-container
+  display flex
+  justify-content space-between
+  width 1138px
+  margin 0 auto
+
+.personal-area__data
+  display flex
+  Roboto(normal, 12px)
+  text-transform uppercase
+  color dark-text
+  letter-spacing 1.1px
+
+.personal-area__to-documents
+  position relative
+  margin-right 25px
+  color dark-text
+
+  &::before
+    content ""
+    display block
+    width 12px
+    height 12px
+    position absolute
+    top -1px
+    right -21px
+    background url(/img/sprites/spritesheet.png) -5px -207px
+
+.personal-area__data-item
+  display flex
+  .personal-area__data-type
+    margin-left 28px
+
+  .personal-area__data-value
+    margin-left 5px
+    color carrot
+    &--balance-ok
+      color dark-text
+    &--in-work
+      color #00d775
+
+.personal-area__user-buttons a
+  position relative
+  margin 0 0 0 39px
+  padding-right 35px
+  Roboto(normal, 12px)
+  text-transform uppercase
+  vertical-align: super;
+  color dark-text
+  letter-spacing 1.3px
+
+.personal-area__client::before
+  content ""
+  display block
+  width 19px
+  height 19px
+  position absolute
+  top 2px
+  right 6px
+  background url(/img/sprites/spritesheet.png) -5px -439px
+
+.personal-area__basket::before
+  content ""
+  display block
+  width 18px
+  height 14px
+  position absolute
+  top 0px
+  right 0px
+  background url(/img/sprites/spritesheet.png) -5px -5px

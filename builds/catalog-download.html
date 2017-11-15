@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400i&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&amp;amp;subset=cyrillic" rel="stylesheet">
+    <title>Мосплитка</title>
+  </head>
+  <body><a href="#top" class="scroll-top-btn"></a><a name="top"></a>
+    <header class="main-header"><a href="/" title="#" class="main-logo"><img src="./img/header-logo.png" width="182" height="22" alt="Лого. Ссылка на главную страницу"></a>
+      <nav> 
+        <ul class="main-nav">
+          <li><a href="catalog.html" title="#">Каталог</a></li>
+          <li><a href="news.html" title="#">Новости</a></li>
+          <li class="main-nav__active-link"><a href="#" title="#">Скачать</a></li>
+          <li><a href="orders.html" title="#">Сотрудничество</a></li>
+          <li><a href="contacts.html" title="#">Карта дилеров</a></li>
+          <li><a href="contacts.html" title="#">Контакты</a></li>
+        </ul>
+      </nav><a href="tel:+78002501080" title="#" class="main-header__call-us">8 800 250 10 80</a>
+      <div class="main-header__custom-actions"><a href="#" title="#" class="main-header__search"></a><a href="orders.html" title="#" class="main-header__login">Вход</a><a href="orders.html" title="#" class="main-header__my-basket">0</a></div>
+    </header>
+    <div style="background: #b09e8a url(img/catalog-h-bg.jpg)" class="page-heading">
+      <div class="page-heading__text">Дилер</div>
+    </div>
+    <div class="content">
+      <div class="stop-access">
+        <div class="stop-access__overflow"></div>
+        <div class="stop-access__form">
+          <form action="#">
+            <div class="stop-access__cause">
+              <div class="stop-access__cause-h">Данный раздел доступен только нашим партнерам</div>
+              <div class="stop-access__cause-description">Чтобы стать партнером, вам необходимо отправить к нам заявку. Все заявки рассматриваются нами в течении одной рабочей недели, при необходимости мы можем связаться с вами для уточнения некоторых вопросов.</div>
+              <div class="stop-access__cause-description">Отпрвляйте, пишите, звоните. Мы рады новому сотрудничеству</div>
+            </div>
+            <div class="stop-access__form-heading">Отправить заявку
+              <div class="stop-access__client-data">
+                <div class="stop-access__input-container contacts__input-container--client-name">
+                  <input type="text" name="client-name" placeholder="Имя*" required>
+                </div>
+                <div class="stop-access__input-container contacts__input-container--city">
+                  <input type="text" name="сity" placeholder="Город*" required>
+                </div>
+                <div class="stop-access__input-container contacts__input-container--client-mail">
+                  <input type="email" name="client-mail" placeholder="E-mail*" required>
+                </div>
+                <div class="stop-access__input-container contacts__input-container--client-tel">
+                  <input type="tel" name="client-tel" placeholder="Телефон*" required>
+                </div>
+              </div>
+            </div>
+            <textarea name="message" placeholder="Сообщение" required rows="7"></textarea>
+            <input type="button" value="Отправить заявку на сотрудничество" class="stop-access__send-message">
+          </form>
+        </div>
+      </div>
+      <div class="login-form">
+        <div class="login-form__overflow"></div>
+        <div class="login-form__container">
+          <div class="login-form__form">
+            <form action="#">
+              <div class="login-form__heading">Вход в кабинет дилера</div>
+              <div class="login-form__input-area">
+                <input type="email" name="mail" placeholder="E-mail:*" required>
+                <input type="password" name="password" placeholder="Пароль:*" required>
+              </div>
+              <div class="login-form__entrance"><a class="login-form__entrance-btn">Войти</a>
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Запомнить меня</label>
+              </div>
+              <div class="login-form__extra-links"><a href="" title="">Я забыл пароль</a><a href="" title="">Отправить заявку на регистрацию</a></div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="page-header">
+        <div class="page-header__inner-container">
+          <div class="page-header__name">Скачать каталоги</div>
+          <div class="page-header__transition"><a href="#" title="#" class="page-header__nav-prev">Главная</a><a title="#" class="page-header__this">Скачать</a></div>
+        </div>
+      </div>
+      <div style="background: #fafafa; padding: 30px 0 76px 0;" class="catalog-downloads">
+        <div class="content-container">
+          <div class="paginator">
+            <ul class="paginator-items">
+              <li><a href="#" title="#" class="paginator__active-filter">Все</a></li>
+              <li><a href="#" title="#">Marazzi</a></li>
+              <li><a href="#" title="#">Kerama Marazzi</a></li>
+              <li><a href="#" title="#">Бренд 3</a></li>
+              <li><a href="#" title="#">Бренд 4</a></li>
+              <li><a href="#" title="#">Бренд...</a></li>
+            </ul>
+            <div class="paginator__page-nav">
+              <div class="paginator__step-back"></div><span class="paginator__page-position">1 из 34</span>
+              <div class="paginator__step-forward"></div>
+            </div>
+          </div>
+          <div class="catalog-download">
+            <div class="catalog-download__item"><img src="img/catalog.jpg" width="367" height="231" alt="Каталог">
+              <div class="catalog-download__catalog-name">Kerama Marazzi</div>
+              <div class="catalog-download__actions"><a class="catalog-download__pdf-download">Скачать PDF</a><a class="catalog-download__send-to-mail">Отправить по Еmail</a></div>
+            </div>
+            <div class="catalog-download__item"><img src="img/catalog.jpg" width="367" height="231" alt="Каталог">
+              <div class="catalog-download__catalog-name">Marazzi</div>
+              <div class="catalog-download__actions"><a class="catalog-download__pdf-download">Скачать PDF</a><a class="catalog-download__send-to-mail">Отправить по Еmail</a></div>
+            </div>
+            <div class="catalog-download__item"><img src="img/catalog.jpg" width="367" height="231" alt="Каталог">
+              <div class="catalog-download__catalog-name">Kerama marazzi керамогранит</div>
+              <div class="catalog-download__actions"><a class="catalog-download__pdf-download">Скачать PDF</a><a class="catalog-download__send-to-mail">Отправить по Еmail</a></div>
+            </div>
+            <div class="catalog-download__item"><img src="img/catalog.jpg" width="367" height="231" alt="Каталог">
+              <div class="catalog-download__catalog-name">Kerama marazzi основной каталог 2017</div>
+              <div class="catalog-download__actions"><a class="catalog-download__pdf-download">Скачать PDF</a><a class="catalog-download__send-to-mail">Отправить по Еmail</a></div>
+            </div>
+            <div class="catalog-download__item"><img src="img/catalog.jpg" width="367" height="231" alt="Каталог">
+              <div class="catalog-download__catalog-name">Ragno 2017</div>
+              <div class="catalog-download__actions"><a class="catalog-download__pdf-download">Скачать PDF</a><a class="catalog-download__send-to-mail">Отправить по Еmail</a></div>
+            </div>
+            <div class="catalog-download__item"><img src="img/catalog.jpg" width="367" height="231" alt="Каталог">
+              <div class="catalog-download__catalog-name">Полный каталог мосплитка 2016</div>
+              <div class="catalog-download__actions"><a class="catalog-download__pdf-download">Скачать PDF</a><a class="catalog-download__send-to-mail">Отправить по Еmail</a></div>
+            </div>
+            <div class="catalog-download__item"><img src="img/catalog.jpg" width="367" height="231" alt="Каталог">
+              <div class="catalog-download__catalog-name">Kerama Marazzi</div>
+              <div class="catalog-download__actions"><a class="catalog-download__pdf-download">Скачать PDF</a><a class="catalog-download__send-to-mail">Отправить по Еmail</a></div>
+            </div>
+            <div class="catalog-download__item"><img src="img/catalog.jpg" width="367" height="231" alt="Каталог">
+              <div class="catalog-download__catalog-name">Kerama Marazzi</div>
+              <div class="catalog-download__actions"><a class="catalog-download__pdf-download">Скачать PDF</a><a class="catalog-download__send-to-mail">Отправить по Еmail</a></div>
+            </div>
+            <div class="catalog-download__item"><img src="img/catalog.jpg" width="367" height="231" alt="Каталог">
+              <div class="catalog-download__catalog-name">Kerama Marazzi</div>
+              <div class="catalog-download__actions"><a class="catalog-download__pdf-download">Скачать PDF</a><a class="catalog-download__send-to-mail">Отправить по Еmail</a></div>
+            </div>
+          </div>
+          <div class="paginator">
+            <ul class="paginator-items"></ul>
+            <div class="paginator__page-nav">
+              <div class="paginator__step-back"></div><span class="paginator__page-position">1 из 34</span>
+              <div class="paginator__step-forward"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="main-footer">
+      <section class="main-footer__info-container"><a href="/" title="#" class="main-footer__logo"><img src="img/footer-logo.png" width="372" height="45" alt="Лого. Переход на главную страницу"></a>
+        <div class="main-footer__info-content">
+          <div class="main-footer__info-item main-footer__info-item--schedule">
+            <div class="main-footer__info-heading">Время работы</div>
+            <p>Ежедневно: 9:00 - 21:00</p>
+            <p>Время отгрузки: 10:00 - 20:00</p>
+          </div>
+          <div class="main-footer__info-item main-footer__info-item--contacts">
+            <div class="main-footer__info-heading">Наши контакты</div>
+            <p>Адрес: Московская область, г. Подольск, пр. Юнных Ленинцев, д.41</p><a href="tel:+74951234469" title="#">Телефон: +7 (495) 123-44-69</a><a href="mailto:sosenki@mosplitka.ru" title="#">E-mail: sosenki@mosplitka.ru</a>
+          </div>
+        </div>
+      </section>
+      <nav class="main-footer__footer-navigation">
+        <div class="main-footer__nav-inn-container">
+          <div class="main-footer__copyright">	&copy; Copyright 2017</div>
+          <ul class="main-footer__nav">
+            <li><a href="/" title="#">О компании</a></li>
+            <li><a href="contacts.html" title="#">Адрес</a></li>
+            <li><a href="contacts.html" title="#">Контакты</a></li>
+            <li><a href="#" title="#">Политика конфиденциальности</a></li>
+          </ul>
+          <div class="main-footer__social"><a href="#" title="#" class="main-footer__social-link main-footer__social-link--twitter"></a><a href="#" title="#" class="main-footer__social-link main-footer__social-link--facebook"></a><a href="#" title="#" class="main-footer__social-link main-footer__social-link--linkedin"></a><a href="#" title="#" class="main-footer__social-link main-footer__social-link--instagram"></a><a href="#" title="#" class="main-footer__social-link main-footer__social-link--youtube"></a><a href="#" title="#" class="main-footer__social-link main-footer__social-link--google"></a><a href="#" title="#" class="main-footer__social-link main-footer__social-link--pinterest"></a></div>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>

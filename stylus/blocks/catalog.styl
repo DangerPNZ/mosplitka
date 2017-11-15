@@ -1,0 +1,609 @@
+.catalog
+  width 100%
+  background catalog-bg
+
+.catalog__inner-container
+  width 1138px
+  flex-direction column
+  margin 0 auto
+
+.catalog__search
+  display flex
+  justify-content space-between
+  padding 10px 0 8px 0
+
+.catalog__search-area input[type="text"]
+  width 825px
+  padding 11px 40px 11px 15px
+  border-top 13px solid #f5f5f5
+  border-bottom 13px solid #f5f5f5
+  border-left 18px solid #f5f5f5
+  border-right 15px solid #f5f5f5
+
+.catalog__search-value
+  display flex
+  position relative
+
+.search-start
+  position absolute
+  cursor pointer
+  width 25px
+  height 25px
+  top 16px
+  right 25px
+  z-index 5
+  &::before
+    content ""
+    display block
+    width 17px
+    height 17px
+    position absolute
+    top 8px
+    left 8px
+    background url(/img/sprites/spritesheet.png) -5px -77px
+
+.catalog__filter-area
+  display flex
+  align-items center
+
+.catalog__filter-activation
+  Roboto(normal, 16px)
+  text-transform uppercase
+  color dark-text
+  letter-spacing 0.5px
+
+.catalog__filter-result
+  margin-left 15px
+  Roboto(400, 12px)
+  color light-blue
+
+.catalog__filters
+  display none
+  width 100%
+  padding-bottom 25px
+
+  &--show
+    display flex
+
+.catalog__filter-item-container
+  padding 0 18px
+  margin 0 auto
+  position relative
+  z-index 30
+
+  &--country
+    .catalog__filter-items-list
+      width 216px
+
+  &--brand
+    .catalog__filter-items-list
+      width 268px
+
+  &--collection
+    .catalog__filter-items-list
+      width 268px
+
+  &--function
+    .catalog__filter-items-list
+      width 229px
+
+.catalog__filter-type
+  display flex
+  justify-content space-between
+  position: relative;
+  padding 10px 0 20px 0
+  border-bottom 1px solid #eaeaea
+  Roboto(400, 13px)
+  color dark-text
+
+  &--country
+    width 216px
+
+    .catalog__filter-items-list
+      width 216px
+
+  &--brand
+    width 268px
+
+    .catalog__filter-items-list
+      width 268px
+
+  &--collection
+    width 268px
+
+    .catalog__filter-items-list
+      width 268px
+
+  &--function
+    width 229px
+
+    .catalog__filter-items-list
+      width 229px
+
+  .catalog__filter-name
+    position relative
+    padding-left 20px
+    text-transform uppercase
+
+    &::before
+      content ""
+      display block
+      width 7px
+      height 7px
+      position absolute
+      top 3px
+      left 0
+      border-top 3px solid dark-text
+      border-right 3px solid dark-text
+      transform rotate(45deg)
+
+.catalog__filter-item-container--expanded
+  .catalog__filter-name::before
+    top 1px
+    transform rotate(135deg)
+
+.catalog__filter-items-list
+  position absolute
+
+// ДЕМО БЛОК
+.catalog__filter-items-list-compressed
+  display none
+  position relative
+  width 100%
+  padding 9px 0px 0 0px
+.items
+  display flex
+  Roboto(400, 10px)
+  color #5d5d5d
+  text-transform uppercase
+.compressed-item
+  position relative
+  display inline
+  padding 0 9px 0 0
+  &:not(:last-child)::after
+    content "/"
+    position absolute
+    right 2px
+.clear-selected
+  position absolute
+  top 7px
+  right 0px
+  Roboto(400, 10px)
+  color light-blue
+
+//
+.catalog__filter-items-list-expanded
+  display none
+  width 100%
+  padding 7px 13px 14px 13px
+  background gray
+  position absolute
+
+  &--show
+    display block
+
+  ul
+    width: 100%;
+    padding-top 3px
+  li
+    padding 10px 0
+
+  .catalog__filter-item-name
+    Roboto(400, 13px)
+    color dark-text
+    text-transform uppercase
+
+  input[type="checkbox"]
+    display none
+
+  input[type="checkbox"]+ .catalog__filter-item-name
+    display block
+    padding-left 26px
+    position relative
+    cursor pointer
+
+  input[type="checkbox"]+ .catalog__filter-item-name::before
+    content ""
+    display block
+    position absolute
+    top 0
+    left 0
+    width 16px
+    height 16px
+    background #fff
+
+  input[type="checkbox"]:checked+ .catalog__filter-item-name::after
+    content ""
+    display block
+    position absolute
+    top 3px
+    left 3px
+    width 10px
+    height 10px
+    background #000
+    z-index 10
+
+.catalog__filter-items-search
+  position relative
+
+  input
+    width 100%
+    padding 13px 10px
+    Roboto(400, 13px)
+    color dark-text
+    border none
+
+.catalog__items-search-btn
+  position absolute
+
+.catalog__results-heading
+  display flex
+  width 100%
+  padding 10px 0 15px 0
+  background #f0f0f0
+  border-bottom 1px solid #fff
+
+.catalog__results-heading
+  .catalog__vendor-code
+    margin-left 5px
+
+.catalog__vendor-code
+  width 88px
+
+.catalog__item-descript
+  width 286px
+
+.catalog__packing
+  width 110px
+
+  .catalog__column-heading
+    text-align center
+
+.catalog__packing *
+  line-height 18px
+.catalog__pack-weight
+  width 74px
+
+.catalog__basic-price
+  width 118px
+
+.catalog__amount
+  width 117px
+  padding-bottom 5px
+
+.catalog__total-price
+  width 117px
+
+.catalog__existence
+  width 66px
+
+  input[type="checkbox"]
+    display none
+  input[type="checkbox"]+ label
+    display block
+    position relative
+    Roboto(400, 12px)
+    color light-blue
+    padding-right 5px
+    cursor: pointer;
+
+  input[type="checkbox"]+ label::before
+    content ""
+    display block
+    width 12px
+    height 12px
+    margin -6px -6px 0 0
+    position absolute
+    top 50%
+    right 6px
+    background #fff
+
+  input[type="checkbox"]:checked+ label::after
+    content ""
+    display block
+    width 6px
+    height 6px
+    margin -3px -3px 0 0
+    position absolute
+    top 50%
+    right 6px
+    background light-blue
+
+.catalog__admission
+  flex-grow 1
+  padding-left 23px
+
+.catalog__column-heading
+  Roboto(500, 13px)
+  color dark-gray
+  text-transform uppercase
+
+.catalog__pack-weight .catalog__column-heading,
+.catalog__basic-price .catalog__column-heading,
+.catalog__total-price .catalog__column-heading
+  text-align center
+
+.catalog__result-item
+  display flex
+  min-height 116px
+  padding 18px 0 15px 0
+
+  &:nth-child(even)
+    background #f5f5f5
+
+  .catalog__vendor-code
+    padding-left 10px
+    Roboto(400, 12px)
+    color dark-text
+    align-self center
+
+  .catalog__item-descript
+    display flex
+    position relative
+
+    .catalog__img-container
+      display block
+      width 80px
+      height 80px
+      position relative
+      margin-right 12px
+      background #fff
+      cursor pointer
+
+      img
+        position absolute
+        top 0
+        left 0
+        right 0
+        bottom 0
+        margin auto
+        max-width 80px
+        max-height 100%
+
+    .catalog__img-container.catalog__img-container--expand
+      img
+        left -70%
+        max-width none
+        max-height none
+        width 188px
+        height 188px
+        z-index 10
+
+    .catalog__item-name
+      display inline
+      Roboto(500, 12px)
+      line-height 20px
+      color dark-gray
+      text-transform uppercase
+      letter-spacing 1px
+
+    .catalog__item-color,
+    .catalog__item-size
+      Roboto(400, 12px)
+      color dark-gray
+      line-height 22px
+
+    .catalog__descript-container
+      display: flex;
+      flex-direction column
+      justify-content space-between
+      width: 194px;
+
+  .catalog__packing
+    display flex
+    flex-direction column
+    align-items center
+    justify-content center
+    Roboto(400, 12px)
+    color dark-gray
+
+  .catalog__pack-weight
+    Roboto(400, 12px)
+    color dark-gray
+    text-align center
+    align-self center
+
+  .catalog__basic-price
+    Roboto(400, 12px)
+    color dark-gray
+    text-align center
+    align-self center
+
+
+  .catalog__amount
+    display flex
+    flex-direction column
+    justify-content space-between
+    position relative
+
+    .catalog__selection-unit
+      display flex
+      justify-content space-between
+
+      .catalog__unit-type
+        Roboto(400, 12px)
+        color dark-gray
+
+    .catalog__selecting-area
+      display flex
+
+    .catalog__selector
+      position relative
+      width 17px
+      height 17px
+      border-radius 50%
+      border none
+      outline none
+      cursor pointer
+      background light-blue
+
+      &::before
+        content ""
+        display block
+        width 9px
+        height 1px
+        margin -0.5px 0 0 -4.5px
+        position absolute
+        left 50%
+        top 50%
+        background #fff
+      &--plus::after
+        content ""
+        display block
+        width 1px
+        height 9px
+        margin -4.5px 0 0 -0.5px
+        position absolute
+        left 50%
+        top 50%
+        background #fff
+
+      &:hover
+        background carrot
+        cursor default
+        cursor pointer
+
+    .catalog__selecting-area.catalog__selecting-area--disabled
+      .catalog__selector
+        background #b1b1b1
+        cursor default
+
+    .catalog__selecting-value
+      width 46px
+      margin 0 5px
+      Roboto(400, 12px)
+      color dark-gray
+      text-align center
+
+    .catalog__amount-add
+      display none
+      position absolute
+      bottom -10px
+      left 10px
+      Roboto(400, 12px)
+      color carrot
+      cursor pointer
+
+      &--show
+        display block
+
+  .catalog__total-price
+    Roboto(400, 12px)
+    color dark-gray
+    text-align center
+    align-self center
+
+  .catalog__existence
+    Roboto(400, 12px)
+    color dark-gray
+    align-self center
+    text-align center
+
+  .catalog__admission
+    display flex
+    align-self center
+
+    .catalog__admission-date
+      Roboto(400, 12px)
+      color carrot
+      text-align center
+      margin-right auto
+      width 75px
+
+      a
+        color light-blue
+
+    .catalog__close-this-item
+      position relative
+      margin-left auto
+      width 44px
+      cursor pointer
+
+      &::before
+        content ""
+        display block
+        width 1px
+        height 7px
+        margin -3.5px 0 0 -0.5px
+        position absolute
+        top 50%
+        left 50%
+        background carrot
+        transform rotate(45deg)
+      &::after
+        content ""
+        display block
+        width 1px
+        height 7px
+        margin -3.5px 0 0 -0.5px
+        position absolute
+        top 50%
+        left 50%
+        background carrot
+        transform rotate(-45deg)
+.catalog__total-result-strut
+  min-height 257px
+  padding: 60px 0 70px 0
+
+.catalog__total-result
+  width 100%
+  background #eaeaea
+  &--fixed
+    position fixed
+    bottom 0
+    margin-bottom 0
+    z-index 20
+
+.catalog__total-inner-container
+  display flex
+  width 1138px
+  margin 0 auto
+  padding 25px 0 23px 0
+  justify-content space-between
+  letter-spacing 0.7px
+
+.catalog__total-result-data
+  display flex
+
+.catalog__result-data-table
+  display flex
+  flex-direction column
+
+.catalog__result-data-h
+  Roboto(normal, 13px)
+  color dark-text
+  text-transform uppercase
+
+.catalog__result-table-container
+  display flex
+  margin-top 5px
+  Roboto(400, 13px)
+  color dark-text
+  width 390px
+  li
+    padding-top 6px
+
+.catalog__unit-name
+  width 140px
+
+.catalog__unit-name--two
+  width 170px
+
+.catalog__order-btn
+  display flex
+  align-items: center;
+  Roboto(normal, 13px)
+  text-transform uppercase
+
+.catalog__refresh
+  color dark-text
+  padding 12px 25px 14px 25px
+  border 1px solid #c4c4c4
+  letter-spacing 1px
+
+.catalog__order-send
+  color #fff
+  margin-left 17px
+  padding 13px 30px 15px 30px
+  background carrot
+  letter-spacing 1px

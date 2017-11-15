@@ -1,0 +1,192 @@
+.sprite {
+    
+background-image: url(spritesheet.png);
+
+background-repeat: no-repeat;
+    
+display: block;
+
+}
+
+
+.sprite-basket-icon {
+    
+width: 18px;
+    
+height: 14px;
+    
+background-position: -5px -5px;
+
+}
+
+
+.sprite-building {
+    
+width: 35px;
+    
+height: 38px;
+    
+background-position: -5px -29px;
+
+}
+
+
+.sprite-catalog-search-icon {
+    
+width: 17px;
+    
+height: 17px;
+    
+background-position: -5px -77px;
+
+}
+
+
+.sprite-city-field-icon {
+    
+width: 15px;
+    height: 20px;
+    
+background-position: -5px -104px;
+
+}
+
+
+.sprite-clock {
+    
+width: 39px;
+    
+height: 39px;
+    
+background-position: -5px -134px;
+
+}
+
+
+.sprite-dealer-icon {
+    
+width: 19px;
+    
+height: 14px;
+    
+background-position: -5px -183px;
+
+}
+
+
+.sprite-documents-icon {
+    
+width: 12px;
+    
+height: 12px;
+    
+background-position: -5px -207px;
+
+}
+
+
+.sprite-header-search-icon {
+    
+width: 13px;
+    
+height: 13px;
+    
+background-position: -5px -229px;
+
+}
+
+
+.sprite-login-form-icon {
+    
+width: 21px;
+    
+height: 18px;
+    
+background-position: -5px -252px;
+
+}
+
+
+.sprite-mail-field-icon {
+    
+width: 20px;
+    
+height: 13px;
+    
+background-position: -5px -280px;
+
+}
+
+
+.sprite-name-field-icon {
+    
+width: 19px;
+    
+height: 19px;
+    
+background-position: -5px -303px;
+
+}
+
+
+.sprite-phone-field-icon {
+    
+width: 17px;
+    
+height: 22px;
+    
+background-position: -5px -332px;
+
+}
+
+
+.sprite-photo-storage {
+    
+width: 19px;
+    
+height: 14px;
+    
+background-position: -5px -364px;
+
+}
+
+
+.sprite-show-catalog {
+    
+width: 16px;
+    
+height: 16px;
+    
+background-position: -5px -388px;
+
+}
+
+
+.sprite-up {
+    
+width: 23px;
+    
+height: 15px;
+    
+background-position: -5px -414px;
+
+}
+
+
+.sprite-user-icon {
+    
+width: 15px;
+    
+height: 12px;
+    
+background-position: -5px -439px;
+
+}
+
+.sprite.facebook_png {background-position: 0 -457px; width: 8px; height: 16px;}
+.sprite.google_png {background-position: 0 -474px; width: 17px; height: 14px;}
+.sprite.in_png {background-position: 0 -489px; width: 14px; height: 15px;}
+.sprite.instagram_png {background-position: 0 -505px; width: 17px; height: 16px;}
+.sprite.pinterest_png {background-position: 0 -522px; width: 14px; height: 16px;}
+.sprite.twitter_png {background-position: 0 -539px; width: 17px; height: 14px;}
+.sprite.youtube_png {background-position: 0 -554px; width: 17px; height: 12px;}

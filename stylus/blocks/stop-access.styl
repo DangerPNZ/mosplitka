@@ -1,0 +1,84 @@
+.stop-access
+  display none
+  position absolute
+  width 100%
+  height 100%
+  z-index 100
+
+.stop-access--show
+  display block
+
+  form
+    display flex
+    flex-direction column
+    position absolute
+    top 0
+    left 50%
+    width 731px
+    margin 0 0 0 -365.5px
+
+  textarea
+    border none
+    background #ececec
+    Roboto(400, 13px)
+    padding 13px 5px 15px 15px
+    width 100%
+    resize none
+
+.stop-access__overflow
+  width 100%
+  height 100%
+  background rgba(255, 255, 255, 0.9)
+
+.stop-access__cause
+  display flex
+  flex-direction column
+  padding 88px 0 71px 0
+
+.stop-access__cause-h
+  Roboto(normal, 17px)
+  text-transform uppercase
+  color dark-text
+  margin 0 auto 25px auto
+  letter-spacing 1.7px
+
+.stop-access__cause-description
+  Roboto(400, 14px)
+  line-height 22px
+  color #5d5d5d
+  letter-spacing 0.2px
+
+.stop-access__form-heading
+  Roboto(normal, 17px)
+  text-transform uppercase
+  color dark-text
+  letter-spacing 1.5px
+
+.stop-access__client-data
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+  margin-top 35px
+
+.stop-access__input-container
+  position relative
+  input
+    width 346px
+    margin-bottom 22px
+    border none
+    background #ececec
+    Roboto(400, 13px)
+    padding 13px 35px 15px 15px
+
+  &:nth-child(2n)
+    input
+      width 364px
+.stop-access__send-message
+  margin 23px auto 0 0
+  Roboto(normal, 13px)
+  text-transform uppercase
+  color #fff
+  background carrot
+  padding 16px 30px 18px 20px
+  border none
+  letter-spacing 1.3px

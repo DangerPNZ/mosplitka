@@ -1,0 +1,161 @@
+doctype html
+html(lang="ru")
+
+  head
+    meta(charset="UTF-8")
+    link(href="css/style.css" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300i&amp;subset=cyrillic" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:700&amp;subset=cyrillic" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:300&amp;subset=cyrillic" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:400i&amp;subset=cyrillic" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:500&amp;subset=cyrillic" rel="stylesheet")
+    title Мосплитка
+  body
+    a(href="#top").scroll-top-btn
+    a(name="top")
+    header.main-header
+      a.main-logo(href="/" title="#")
+        img(src="./img/header-logo.png" width="182" height="22" alt="Лого. Ссылка на главную страницу")
+      nav
+        ul.main-nav
+          li
+            a(href="catalog.html" title="#") Каталог
+          li
+            a(href="news.html" title="#") Новости
+          li
+            a(href="catalog-download.html" title="#") Скачать
+          li
+            a(href="orders.html" title="#") Сотрудничество
+          li.main-nav__active-link
+            a(href="#" title="#") Карта дилеров
+          li.main-nav__active-link
+            a(href="#" title="#") Контакты
+
+      a.main-header__call-us(href="tel:+78002501080" title="#") 8 800 250 10 80
+      .main-header__custom-actions
+        a.main-header__search(href="#" title="#")
+        a.main-header__login(href="orders.html" title="#") Вход
+        a.main-header__my-basket(href="orders.html" title="#") 0
+
+    .page-heading(style="background: #b09e8a url(img/catalog-h-bg.jpg)")
+      .page-heading__text Дилер
+
+    .content
+      .login-form
+        .login-form__overflow
+        .login-form__container
+          .login-form__form
+            form(action="#")
+              .login-form__heading Вход в кабинет дилера
+              .login-form__input-area
+                input(type="email" name="mail" placeholder="E-mail:*" required)
+                input(type="password" name="password" placeholder="Пароль:*" required)
+              .login-form__entrance
+                a.login-form__entrance-btn Войти
+                input(type="checkbox" id="remember-me")
+                label(for="remember-me") Запомнить меня
+              .login-form__extra-links
+                a(href="" title="") Я забыл пароль
+                a(href="" title="") Отправить заявку на регистрацию
+
+      .page-header
+        .page-header__inner-container
+          .page-header__name Контакты
+          .page-header__transition
+            a(href="#" title="#" class="page-header__nav-prev") Главная
+            a(title="#" class="page-header__this") Контакты
+
+      .contacts(style="background: #fafafa;")
+        .content-container
+          .contacts__feedback
+            .contacts__info
+              .contacts__info-heading Контактная информация
+              p.contacts__info-explanation Основной офис компани находится в Москве. Время работы офиса с 9:00 до 19:00 без выходных.  В любое другое нерабочее время вы можете написать нам сообщение. Ну или может быть здесь другая инфа будет.
+              .contacts__info-elements
+                .contacts__info-item Адрес: 190000, Московская область, г. Подольск,
+                  #[br]пр. Юнных Ленинцев, д. 41 (д. 45 - склад)
+                .contacts__info-item
+                  div Email:
+                  a.contacts__contact-mail(href="mailto:diler@mosplitka.ru") diler@mosplitka.ru
+                .contacts__info-item
+                  div Телефон 1:
+                  a(href="tel:+7495495000100") +7 (495) 495 000 100
+                .contacts__info-item
+                  div Телефон 2:
+                  a(href="tel:7499495111100") 7 (499) 495 111 100
+
+            .contacts__feedback-form
+              form(action="#")
+                .contacts__form-heading Отправить сообщение
+                  .contacts__client-data
+                    .contacts__input-container.contacts__input-container--client-name
+                      input(type="text" name="client-name" placeholder="Имя*" required)
+                    .contacts__input-container.contacts__input-container--city
+                      input(type="text" name="сity" placeholder="Город*" required)
+                    .contacts__input-container.contacts__input-container--client-mail
+                      input(type="email" name="client-mail" placeholder="E-mail*" required)
+                    .contacts__input-container.contacts__input-container--client-tel
+                      input(type="tel" name="client-tel" placeholder="Телефон*" required)
+
+                textarea(name="message" placeholder="Сообщение" required rows="7")
+
+                input.contacts__send-message(type="button" value="Отправить сообщение")
+
+          .map(style="padding-bottom: 131px;")
+            img(src="img/map.jpg" width="1138" height="407" alt="карта")
+
+    nav.extra-menu
+      a.extra-menu__item.extra-menu__item--become-a-dealer(href="#" title="")
+        .extra-menu__bg-container(style="background: #eee url(img/dealer-bg.jpg) no-repeat; background-size: contain; background-position: center center;")
+        .extra-menu__descript
+          div Стать дилером
+
+      a.extra-menu__item.extra-menu__item--storage-photo(href="#" title="")
+        .extra-menu__bg-container(style="background: #d4e5f3 url(img/storage-bg.jpg) no-repeat; background-size: contain; background-position: center center;")
+        .extra-menu__descript
+          div Фото склада
+
+      a.extra-menu__item.extra-menu__item--see-catalog(href="catalog-download.html" title="")
+        .extra-menu__bg-container(style="background: #f3f4f5 no-repeat; background-size: contain; background-position: center center;")
+        .extra-menu__descript
+          div Посмотреть каталог
+
+    footer.main-footer
+      section.main-footer__info-container
+        a.main-footer__logo(href="/" title="#")
+          img(src="img/footer-logo.png" width="372" height="45" alt="Лого. Переход на главную страницу")
+        .main-footer__info-content
+
+          .main-footer__info-item.main-footer__info-item--schedule
+            .main-footer__info-heading Время работы
+            p Ежедневно: 9:00 - 21:00
+            p Время отгрузки: 10:00 - 20:00
+
+          .main-footer__info-item.main-footer__info-item--contacts
+            .main-footer__info-heading Наши контакты
+            p Адрес: Московская область, г. Подольск, пр. Юнных Ленинцев, д.41
+            a(href="tel:+74951234469" title="#") Телефон: +7 (495) 123-44-69
+            a(href="mailto:sosenki@mosplitka.ru" title="#") E-mail: sosenki@mosplitka.ru
+
+      nav.main-footer__footer-navigation
+        .main-footer__nav-inn-container
+          .main-footer__copyright 	&copy; Copyright 2017
+          ul.main-footer__nav
+            li
+              a(href="/" title="#") О компании
+            li
+              a(href="#" title="#") Адрес
+            li
+              a(href="#" title="#") Контакты
+            li
+              a(href="#" title="#") Политика конфиденциальности
+          .main-footer__social
+            a.main-footer__social-link.main-footer__social-link--twitter(href="#" title="#")
+            a.main-footer__social-link.main-footer__social-link--facebook(href="#" title="#")
+            a.main-footer__social-link.main-footer__social-link--linkedin(href="#" title="#")
+            a.main-footer__social-link.main-footer__social-link--instagram(href="#" title="#")
+            a.main-footer__social-link.main-footer__social-link--youtube(href="#" title="#")
+            a.main-footer__social-link.main-footer__social-link--google(href="#" title="#")
+            a.main-footer__social-link.main-footer__social-link--pinterest(href="#" title="#")

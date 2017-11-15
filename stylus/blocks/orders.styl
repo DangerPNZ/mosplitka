@@ -1,0 +1,667 @@
+.orders
+  background #fafafa
+  padding-bottom 47px
+
+.orders__search
+  display flex
+  justify-content space-between
+  width 1138px
+  margin 0 auto 1px auto
+  padding 15px 0 17px 0
+
+.orders__search-value
+  display flex
+  position relative
+
+  .search-start
+    position absolute
+    cursor pointer
+    width 25px
+    height 25px
+    top 16px
+    right 25px
+    z-index 5
+    &::before
+      content ""
+      display block
+      width 17px
+      height 17px
+      position absolute
+      top 8px
+      left 8px
+      background url(/img/sprites/spritesheet.png) -5px -77px
+  input[type="text"]
+    width 586px
+    padding 13px 40px 13px 25px
+    border-top 13px solid #f5f5f5
+    border-bottom 13px solid #f5f5f5
+    border-left 13px solid #f5f5f5
+    border-right 11px solid #f5f5f5
+    Roboto(300, 13px)
+
+
+.orders__filters
+  display flex
+  justify-content space-between
+  width 100%
+  margin-left 28px
+  padding-bottom 25px
+
+.orders__filter-item-container
+  position relative
+  z-index 30
+
+  &--order-date
+    .orders__filter-items-list
+      width 216px
+
+  &--order-status
+    .orders__filter-items-list
+      width 268px
+
+
+.orders__filter-type
+  display flex
+  justify-content space-between
+  position: relative;
+  padding 10px 0 20px 0
+  border-bottom 1px solid #eaeaea
+  Roboto(400, 13px)
+  color dark-text
+
+  &--order-date
+    width 216px
+
+    .orders__filter-items-list
+      width 216px
+
+  &--order-status
+    width 268px
+
+    .orders__filter-items-list
+      width 268px
+
+  .orders__filter-name
+    position relative
+    padding-left 20px
+    text-transform uppercase
+
+    &::before
+      content ""
+      display block
+      width 7px
+      height 7px
+      position absolute
+      top 3px
+      left 0
+      border-top 3px solid dark-text
+      border-right 3px solid dark-text
+      transform rotate(45deg)
+
+.orders__filter-item-container--expanded
+  .orders__filter-name::before
+    top 1px
+    transform rotate(135deg)
+
+.orders__filter-items-list
+  position absolute
+
+// ДЕМО БЛОК
+.orders__filter-items-list-compressed
+  display none
+  position relative
+  width 100%
+  padding 9px 0px 0 0px
+.items
+  display flex
+  Roboto(400, 10px)
+  color #5d5d5d
+  text-transform uppercase
+.compressed-item
+  position relative
+  display inline
+  padding 0 9px 0 0
+  &:not(:last-child)::after
+    content "/"
+    position absolute
+    right 2px
+.clear-selected
+  position absolute
+  top 7px
+  right 0px
+  Roboto(400, 10px)
+  color light-blue
+
+//
+.orders__filter-items-list-expanded
+  display none
+  width 100%
+  padding 7px 13px 14px 13px
+  background gray
+  position absolute
+
+  &--show
+    display block
+
+  ul
+    width: 100%;
+    padding-top 3px
+  li
+    padding 10px 0
+
+  .orders__filter-item-name
+    Roboto(400, 13px)
+    color dark-text
+    text-transform uppercase
+
+  input[type="checkbox"]
+    display none
+
+  input[type="checkbox"]+ .orders__filter-item-name
+    display block
+    padding-left 26px
+    position relative
+    cursor pointer
+
+  input[type="checkbox"]+ .orders__filter-item-name::before
+    content ""
+    display block
+    position absolute
+    top 0
+    left 0
+    width 16px
+    height 16px
+    background #fff
+
+  input[type="checkbox"]:checked+ .orders__filter-item-name::after
+    content ""
+    display block
+    position absolute
+    top 3px
+    left 3px
+    width 10px
+    height 10px
+    background #000
+    z-index 10
+
+.orders__filter-items-search
+  position relative
+
+  input
+    width 100%
+    padding 13px 10px
+    Roboto(400, 13px)
+    color dark-text
+    border none
+
+.orders__items-search-btn
+  position absolute
+
+.orders__results-heading
+  display flex
+  width 1138px
+  margin 0 auto
+  padding 8px 0 7px 0
+  background #f0f0f0
+  Roboto(500, 13px)
+  color dark-gray
+  text-transform uppercase
+
+.orders__app-date
+  width 74px
+  text-align center
+
+.orders__order-number
+  width 117px
+  text-align center
+
+.orders__order-status
+  width 111px
+  text-align center
+
+.orders__order-list
+  width 109px
+  text-align center
+
+.orders__sum
+  width 96px
+  text-align center
+
+.orders__my-price
+  width 78px
+  text-align center
+
+.orders__order-weight
+  width 95px
+  text-align center
+
+.orders__change-log
+  width 168px
+  text-align center
+
+.orders__confirm-shipment
+  width 140px
+  text-align center
+
+.orders__comments
+  display flex
+  flex-grow 1
+  .orders__column-heading
+    margin 0 auto
+
+.orders__order-item
+  display flex
+  width 1138px
+  min-height 116px
+  margin 1px auto
+  background #f5f5f5
+  Roboto(400, 12px)
+  color dark-gray
+
+  .orders__app-date
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+
+  .orders__order-number
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+
+  .orders__order-status
+    display flex
+    flex-direction column
+    justify-content center
+    align-items flex-start
+    text-align left
+
+    .orders__download-total
+      display none
+      Roboto(400, 10px)
+      color light-blue
+
+    &--awaits-confirm
+      .orders__status-value,
+      .orders__new-status-date
+        color carrot
+    &--awaits-payment
+      .orders__status-value,
+      .orders__new-status-date
+        color #00d775
+      .orders__download-total
+        display flex
+      .orders__expected-action
+        color carrot
+    &--awaits-equipment
+      .orders__status-value,
+      .orders__new-status-date
+        color #00d775
+    &--awaits-delivery
+      .orders__status-value,
+      .orders__new-status-date
+        color #79c28a
+
+  .orders__order-list
+    display flex
+    flex-direction column
+    justify-content center
+    align-items flex-start
+
+    .orders__items-look
+      Roboto(400, 10px)
+      color light-blue
+      margin-top 3px
+      cursor pointer
+
+  .orders__sum
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+
+  .orders__my-price
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    position relative
+
+    .orders__personal-discount
+      display none
+      position absolute
+      top 10px
+      left 0
+      text-align left
+      Roboto(400, 10px)
+      color #e43030
+
+    .orders__column-value--no-data
+      Roboto(400, 10px)
+      color light-blue
+
+  .orders__order-weight
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+
+  .orders__change-log
+    display flex
+    flex-direction column
+    justify-content center
+    align-items flex-start
+    .orders__change-accept
+      display none
+      Roboto(400, 10px)
+      color light-blue
+    &--manager-changes
+      color #79c28a
+      .orders__change-accept
+        display flex
+    &--changes-confirmed
+      color #79c28a
+    &--client-changes
+      color carrot
+  .orders__confirm-shipment
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    position relative
+
+
+    input[type="checkbox"]
+      display none
+
+    label
+      display flex
+      position absolute
+      top 0
+      left 0
+      right 0
+      bottom 0
+
+    input[type="checkbox"]+ label
+      display block
+      position relative
+      cursor pointer
+      top 0
+      left 0
+      width 16px
+      height 16px
+      background #f0f0f0
+      border 1px solid #c9c9c9
+
+    input[type="checkbox"]:checked+ label::after
+      content ""
+      display block
+      position absolute
+      top 0
+      left 0
+      right 0
+      bottom 0
+      margin auto
+      width 10px
+      height 10px
+      background #000
+      z-index 10
+
+  .orders__comments
+    display flex
+    flex-direction column
+    justify-content center
+    text-align left
+    width 150px
+
+    .orders__call-btn
+      Roboto(400, 10px)
+      color light-blue
+      cursor pointer
+    .orders__message-input
+      display none
+      width 150px
+      height 110px
+      resize none
+      margin-right 3px
+      Roboto(400, 10px)
+      font-style italic
+    .orders__comment-item
+      display none
+    .orders__comment-control
+      display none
+      Roboto(400, 10px)
+      color light-blue
+    &--whrite-message
+      .orders__call-btn
+        display none
+      .orders__message-input
+        display block
+    &--show-comments
+      .orders__call-btn
+        display none
+      .orders__message-input
+        display none
+      .orders__comment-item
+        display block
+      .orders__date-and-sender
+        display flex
+        flex-wrap wrap
+        margin-top 8px
+        .orders__comment-date
+          margin-right 3px
+      .orders__coomment-text
+        Roboto(400, 10px)
+        font-style italic
+      .orders__comment-control
+        display block
+        margin-top 5px
+        cursor pointer
+
+.orders__output-catalog-items
+  display none
+  flex-direction column
+  width 1138px
+  margin 0 auto
+
+  &--show
+    display flex
+  .catalog__result-item
+    margin-top -10px
+  &--found-items
+    .catalog__result-item
+      .catalog__admission
+        .catalog__close-this-item
+          position relative
+          margin 5px 10px 0 auto
+          width 17px
+          height 17px
+          border-radius 50%
+          cursor pointer
+          background #79c28a
+          &::before
+            width 2px
+            height 9px
+            margin -4.5px 0 0 -1px
+            background #fff
+            transform rotate(0deg)
+          &::after
+            width 2px
+            height 9px
+            margin -4.5px 0 0 -1px
+            position absolute
+            background #fff
+            transform rotate(90deg)
+  &--rejected
+    .catalog__result-item
+      position relative
+      &::before
+        content ""
+        display block
+        width 100%
+        height 100%
+        position absolute
+        left 0
+        top 0
+        background-color rgba(240, 240, 240, 0.6)
+        z-index 20
+
+.orders__element-header
+  display flex
+  width 1138px
+  margin 10px auto 5px auto
+  border 1px solid transparent
+
+.orders__element-h
+  Roboto(500, 13px)
+  color dark-gray
+  text-transform uppercase
+
+.orders__output-element-control
+  display flex
+  Roboto(300, 13px)
+  margin-left 15px
+  &--reverse
+    flex-direction row-reverse
+  div
+    margin-right 5px
+    cursor pointer
+  .orders__output-element-accept
+    color light-blue
+  .orders__output-element-reject
+    color carrot
+
+.orders__output-item-container
+  transform: scale(0.8743)
+
+
+  .catalog__results-heading
+    .catalog__existence
+      input[type="checkbox"]+ label
+        display none
+
+  .catalog__result-item
+    margin-bottom 1px
+    background-color #f0f0f0
+
+    .catalog__selection-unit
+      .catalog__selecting-area
+        &--disabled
+          input[type="text"]
+            background-color transparent
+        input[type="text"]
+          border none
+
+        .catalog__selector
+          &::before
+            height 2px
+            margin -1px 0 0 -4.5px
+          &--plus::after
+            width 2px
+            margin -4.5px 0 0 -1px
+
+.orders__output-item-search
+  display none
+  flex-direction column
+  width 595px
+  margin 0 auto
+  .orders__element-h
+    Roboto(500, 11px)
+  &--show
+    display flex
+
+  .search-start
+    top 11px
+    right 18px
+    &::before
+      transform scale(0.70)
+
+  input[type="text"]
+    width 593px
+    margin-top 5px
+    padding 8px 40px 8px 18px
+    border-top 10px solid #f5f5f5
+    border-bottom 10px solid #f5f5f5
+    border-left 12px solid #f5f5f5
+    border-right 11px solid #f5f5f5
+    Roboto(300, 10px)
+.orders__hide-output-items
+  display flex
+  width 995px
+  margin 0 auto
+
+  .orders__hide-btn
+    margin-left auto
+    margin-right 5px
+    Roboto(300, 10px)
+    color light-blue
+    cursor pointer
+.orders__log-area
+  display flex
+  justify-content space-between
+  width 995px
+  margin 0 auto 55px auto
+  .orders__element-header
+    width 100%
+    margin 0 0 5px 0
+  .orders__element-h
+    Roboto(500, 11px)
+.orders__log-output
+  width 645px
+  .orders__log-window
+    display: flex;
+    height 260px
+  .orders__log-window-content
+    width 100%
+    padding 12px
+    background-color #f0f0f0
+    overflow-y auto
+  .orders__log-comment-item
+    display flex
+    margin-bottom 10px
+    Roboto(300, 12px)
+    color dark-gray
+  .orders__log-comment-date
+    margin-right 8px
+  .orders__log-comment-sender
+    display: inline-block;
+    margin-right 15px
+  .orders__log-comment-text
+    display inline-block
+    font-style italic
+
+.orders__log-input
+  width 325px
+  Roboto(300, 10px)
+  form
+    display flex
+    flex-direction column
+    width 100%
+    height 260px
+    padding 12px
+    background-color #f0f0f0
+  input
+    border none
+    margin-bottom 13px
+    padding 9px 20px
+  textarea
+    width 100%
+    height 111px
+    padding 9px 20px
+    border none
+    resize none
+  .orders__log-actions
+    display flex
+    justify-content space-between
+    margin-top auto
+    div
+      width 147px
+      padding 9px 0
+      text-align center
+      color #fff
+      cursor pointer
+.orders__attach-file
+  background-color #c3c3c3
+.orders__comm-send
+  background-color carrot

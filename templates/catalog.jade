@@ -1,0 +1,720 @@
+doctype html
+html(lang="ru")
+
+  head
+    meta(charset="UTF-8")
+    link(href="css/style.css" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300i&amp;subset=cyrillic" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:700&amp;subset=cyrillic" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:300&amp;subset=cyrillic" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:400i&amp;subset=cyrillic" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:500&amp;subset=cyrillic" rel="stylesheet")
+    script(type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js")
+    title Мосплитка
+  body
+    a(href="#top").scroll-top-btn
+    a(name="top")
+    header.main-header
+      a.main-logo(href="/" title="#")
+        img(src="./img/header-logo.png" width="182" height="22" alt="Лого. Ссылка на главную страницу")
+      nav
+        ul.main-nav
+          li.main-nav__active-link
+            a(href="#" title="#") Каталог
+          li
+            a(href="news.html" title="#") Новости
+          li
+            a(href="catalog-download.html" title="#") Скачать
+          li
+            a(href="orders.html" title="#") Сотрудничество
+          li
+            a(href="contacts.html" title="#") Карта дилеров
+          li
+            a(href="contacts.html" title="#") Контакты
+
+      a.main-header__call-us(href="tel:+78002501080" title="#") 8 800 250 10 80
+      .main-header__custom-actions
+        a.main-header__search(href="#" title="#")
+        a.main-header__login(href="#" title="#") Вход
+        a.main-header__my-basket(href="#" title="#") 0
+
+    .page-heading(style="background: #b09e8a url(img/catalog-h-bg.jpg)")
+      .page-heading__text ООО "Промлес"
+
+    .content
+      .login-form
+        .login-form__overflow
+        .login-form__container
+          .login-form__form
+            form(action="#")
+              .login-form__heading Вход в кабинет дилера
+              .login-form__input-area
+                input(type="email" name="mail" placeholder="E-mail:*" required)
+                input(type="password" name="password" placeholder="Пароль:*" required)
+              .login-form__entrance
+                a.login-form__entrance-btn Войти
+                input(type="checkbox" id="remember-me")
+                label(for="remember-me") Запомнить меня
+              .login-form__extra-links
+                a(href="" title="") Я забыл пароль
+                a(href="" title="") Отправить заявку на регистрацию
+
+      .personal-area
+        .personal-area__inner-container
+          .personal-area__data
+            a.personal-area__to-documents(href="#" title="#") Документы
+            .personal-area__data-item
+              .personal-area__data-type Баланс:
+              .personal-area__data-value -2 256 329 руб.
+
+            .personal-area__data-item
+              .personal-area__data-type Статус:
+              .personal-area__data-value Стоп отгрузка
+
+          .personal-area__user-buttons
+            a.personal-area__client(href="#" title="#") ООО "Промлес" ИНН 2365982454
+            a.personal-area__basket(href="#" title="#") Мои заказы
+
+      .catalog-header
+        .catalog-header__inner-container
+          .catalog-header__heading Каталог товаров
+
+          .catalog-header__helpers
+            .catalog-header__helper
+              .catalog-header__helper-post Мой менеджер:
+              .catalog-header__helper-info
+                .catalog-header__helper-name Трушкин Дмитрий
+                a(href="tel:+79256463842" title="Позвонить Дмитрию Трушкину") +7 925 646 38 42
+                a(href="mailto:palamar@mosplitka.ru" title="Написать Дмитрию Трушкину") palamar@mosplitka.ru
+
+            .catalog-header__helper
+              .catalog-header__helper-post Помошник менеджера:
+              .catalog-header__helper-info
+                .catalog-header__helper-name Паламар Константин
+                a(href="tel:+79256463842" title="Позвонить Константину Паламар") +7 925 646 38 42
+                a(href="mailto:palamar@mosplitka.ru" title="Написать Константину Паламар") palamar@mosplitka.ru
+
+      .catalog
+        form(action="#")
+        .catalog__inner-container
+            .catalog__search
+              .catalog__search-area
+                .catalog__search-value
+                  input(type="text" name="search-value")
+                  .search-start
+
+              .catalog__filter-area
+                .catalog__filter-activation Фильтр по параметрам
+                a.catalog__filter-result(href="#" title="Показать фильтр") Показать
+
+            .catalog__filters.catalog__filters--show
+              .catalog__filter-item-container.catalog__filter-item-container--country
+                a.catalog__filter-type.catalog__filter-type--country
+                  .catalog__filter-name Страна
+                  .catalog__filter-elements-sum (43)
+
+
+              .catalog__filter-item-container.catalog__filter-item-container--brand
+                a.catalog__filter-type.catalog__filter-type--brand
+                  .catalog__filter-name Бренд
+                  .catalog__filter-elements-sum (43)
+
+                .catalog__filter-items-list-compressed
+                  .items
+                    .compressed-item Kerama Marazzi
+                    .compressed-item Ragno
+                    .compressed-item Estima
+                    .compressed-item ...
+                  a.clear-selected Очистить
+
+                .catalog__filter-items-list
+
+                  .catalog__filter-items-list-expanded
+                    .catalog__filter-items-search
+                      input(type="text" placeholder="Поиск по производителям")
+                      .catalog__items-search-btn
+                    ul
+                      li
+                        input(type="checkbox" checked id="marazzi")
+                        label.catalog__filter-item-name(for="marazzi") Kerama Marazzi
+                      li
+                        input(type="checkbox")
+                        label.catalog__filter-item-name(for="#") Marazzi
+                      li
+                        input(type="checkbox")
+                        label.catalog__filter-item-name(for="#") Ragno
+                      li
+                        input(type="checkbox")
+                        label.catalog__filter-item-name(for="#") Grasaro
+                      li
+                        input(type="checkbox")
+                        label.catalog__filter-item-name(for="#") Italon
+                      li
+                        input(type="checkbox")
+                        label.catalog__filter-item-name(for="#") Kerranova
+                      li
+                        input(type="checkbox")
+                        label.catalog__filter-item-name(for="#") Mei
+                      li
+                        input(type="checkbox")
+                        label.catalog__filter-item-name(for="#") Mosplitka
+                      li
+                        input(type="checkbox")
+                        label.catalog__filter-item-name(for="#") APE Ceramica
+                      li
+                        input(type="checkbox")
+                        label.catalog__filter-item-name(for="#") Cevica
+                      li
+                        input(type="checkbox")
+                        label.catalog__filter-item-name(for="#") Cithetiles
+                      li
+                        input(type="checkbox")
+                        label.catalog__filter-item-name(for="#") Equipe
+                      li
+                        input(type="checkbox")
+                        label.catalog__filter-item-name(for="#") Gresmanc
+                      li
+                        input(type="checkbox")
+                        label.catalog__filter-item-name(for="#") Intermatex
+                      li
+                        input(type="checkbox")
+                        label.catalog__filter-item-name(for="#") Marazzi Espana
+                      li
+                        input(type="checkbox")
+                        label.catalog__filter-item-name(for="#") Mijares
+
+              .catalog__filter-item-container.catalog__filter-item-container--collection
+                a.catalog__filter-type.catalog__filter-type--collection
+                  .catalog__filter-name Коллекция
+                  .catalog__filter-elements-sum (43)
+
+              .catalog__filter-item-container.catalog__filter-item-container--function
+                a.catalog__filter-type.catalog__filter-type--function
+                  .catalog__filter-name Назначение
+                  .catalog__filter-elements-sum (43)
+
+            .catalog__results-heading
+
+              .catalog__vendor-code
+                .catalog__column-heading Артикул
+
+              .catalog__item-descript
+                .catalog__column-heading Наименование товара
+
+              .catalog__packing
+                .catalog__column-heading Пакинг
+
+              .catalog__pack-weight
+                .catalog__column-heading Вес упаковки
+
+              .catalog__basic-price
+                .catalog__column-heading Цена
+                  #[br]базовая
+
+              .catalog__amount
+                .catalog__column-heading Количество
+
+              .catalog__total-price
+                .catalog__column-heading Итоговая
+                  #[br]цена
+
+              .catalog__existence
+                .catalog__column-heading Наличие
+                input(type="checkbox" name="availability" id="availability" checked)
+                label(for="availability") что есть
+
+              .catalog__admission
+                .catalog__column-heading Поступление
+
+
+            .catalog__result-item
+
+              .catalog__vendor-code GIL091D
+
+              .catalog__item-descript
+                .catalog__img-container
+                  img(src="img/item-photo-2.jpg" width="80" height="22" alt="Внешний вид")
+                .catalog__descript-container
+                  .catalog__item-name ПЛИНТУС СЕНАТ СВЕТЛО-СЕРЫЙ ОБРЕЗНОЙ
+                  .catalog__characteristics
+                    .catalog__item-color Цвет: Серый
+                    .catalog__item-size Размер: 30х60
+
+              .catalog__packing
+                .catalog__packing-size 0,9300 м#[sup 2]/уп
+                .catalog__packing-completeness 5,00 шт/уп
+
+              .catalog__pack-weight 19,50 кг
+
+              .catalog__basic-price  11 294 руб/м#[sup 2]
+
+              .catalog__amount
+                .catalog__selection-unit
+                  .catalog__unit-type шт
+                  .catalog__selecting-area.catalog__selecting-area--disabled
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+                .catalog__selection-unit
+                  .catalog__unit-type м#[sup 2]
+                  .catalog__selecting-area
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+                .catalog__selection-unit
+                  .catalog__unit-type уп
+                  .catalog__selecting-area
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+                .catalog__amount-add.catalog__amount-add--show Добавить к заказу
+
+              .catalog__total-price 1 365 828,37 руб.
+
+              .catalog__existence 1 267 м#[sup 2]
+
+              .catalog__admission
+                .catalog__admission-date
+                  div нет даты поступления
+                .catalog__close-this-item
+
+
+
+            .catalog__result-item
+
+              .catalog__vendor-code GIL091D
+
+              .catalog__item-descript
+                .catalog__img-container
+                  img(src="img/item-photo-2.jpg" width="80" height="22" alt="Внешний вид")
+                .catalog__descript-container
+                  .catalog__item-name ДЕКОР МАРМИОН СЕРЫЙ МОЗАИЧНЫЙ
+                  .catalog__characteristics
+                    .catalog__item-color Цвет: Серый
+                    .catalog__item-size Размер: 30х60
+
+              .catalog__packing
+                .catalog__packing-size 0,9300 м#[sup 2]/уп
+                .catalog__packing-completeness 5,00 шт/уп
+
+              .catalog__pack-weight 19,50 кг
+
+              .catalog__basic-price  11 294 руб/м#[sup 2]
+
+              .catalog__amount
+                .catalog__selection-unit
+                  .catalog__unit-type шт
+                  .catalog__selecting-area.catalog__selecting-area--disabled
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+                .catalog__selection-unit
+                  .catalog__unit-type м#[sup 2]
+                  .catalog__selecting-area
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+                .catalog__selection-unit
+                  .catalog__unit-type уп
+                  .catalog__selecting-area
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+              .catalog__total-price 1 365 828,37 руб.
+
+              .catalog__existence 1 267 м#[sup 2]
+
+              .catalog__admission
+                .catalog__admission-date нет даты поступления
+                .catalog__close-this-item
+
+
+            .catalog__result-item
+
+              .catalog__vendor-code GIL091D
+
+              .catalog__item-descript
+                .catalog__img-container
+                  img(src="img/item-photo-2.jpg" width="80" height="22" alt="Внешний вид")
+                .catalog__descript-container
+                  .catalog__item-name Плитка Gabi или#[br]наименование по длинее
+                  .catalog__characteristics
+                    .catalog__item-color Цвет: Серый
+                    .catalog__item-size Размер: 30х60
+
+              .catalog__packing
+                .catalog__packing-size 0,9300 м#[sup 2]/уп
+                .catalog__packing-completeness 5,00 шт/уп
+
+              .catalog__pack-weight 19,50 кг
+
+              .catalog__basic-price  11 294 руб/м#[sup 2]
+
+              .catalog__amount
+                .catalog__selection-unit
+                  .catalog__unit-type шт
+                  .catalog__selecting-area.catalog__selecting-area--disabled
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+                .catalog__selection-unit
+                  .catalog__unit-type м#[sup 2]
+                  .catalog__selecting-area
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+                .catalog__selection-unit
+                  .catalog__unit-type уп
+                  .catalog__selecting-area
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+              .catalog__total-price 1 365 828,37 руб.
+
+              .catalog__existence 1 267 м#[sup 2]
+
+              .catalog__admission
+                .catalog__admission-date нет даты поступления
+                .catalog__close-this-item
+
+
+            .catalog__result-item
+
+              .catalog__vendor-code GIL091D
+
+              .catalog__item-descript
+                .catalog__img-container
+                  img(src="img/item-photo-fullsize.jpg" width="188" height="188" alt="Внешний вид")
+                .catalog__descript-container
+                  .catalog__item-name Плитка Gabi или#[br]наименование по длинее
+                  .catalog__characteristics
+                    .catalog__item-color Цвет: Серый
+                    .catalog__item-size Размер: 30х60
+
+              .catalog__packing
+                .catalog__packing-size 0,9300 м#[sup 2]/уп
+                .catalog__packing-completeness 5,00 шт/уп
+
+              .catalog__pack-weight 19,50 кг
+
+              .catalog__basic-price  11 294 руб/м#[sup 2]
+
+              .catalog__amount
+                .catalog__selection-unit
+                  .catalog__unit-type шт
+                  .catalog__selecting-area.catalog__selecting-area--disabled
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+                .catalog__selection-unit
+                  .catalog__unit-type м#[sup 2]
+                  .catalog__selecting-area
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+                .catalog__selection-unit
+                  .catalog__unit-type уп
+                  .catalog__selecting-area
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+              .catalog__total-price 1 365 828,37 руб.
+
+              .catalog__existence 1 267 м#[sup 2]
+
+              .catalog__admission
+                .catalog__admission-date нет даты поступления
+                .catalog__close-this-item
+
+
+            .catalog__result-item
+
+              .catalog__vendor-code GIL091D
+
+              .catalog__item-descript
+                .catalog__img-container
+                  img(src="img/item-photo-2.jpg" width="80" height="22" alt="Внешний вид")
+                .catalog__descript-container
+                  .catalog__item-name Плитка Gabi или#[br]наименование по длинее
+                  .catalog__characteristics
+                    .catalog__item-color Цвет: Серый
+                    .catalog__item-size Размер: 30х60
+
+              .catalog__packing
+                .catalog__packing-size 0,9300 м#[sup 2]/уп
+                .catalog__packing-completeness 5,00 шт/уп
+
+              .catalog__pack-weight 19,50 кг
+
+              .catalog__basic-price  11 294 руб/м#[sup 2]
+
+              .catalog__amount
+                .catalog__selection-unit
+                  .catalog__unit-type шт
+                  .catalog__selecting-area.catalog__selecting-area--disabled
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+                .catalog__selection-unit
+                  .catalog__unit-type м#[sup 2]
+                  .catalog__selecting-area
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+                .catalog__selection-unit
+                  .catalog__unit-type уп
+                  .catalog__selecting-area
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+              .catalog__total-price 1 365 828,37 руб.
+
+              .catalog__existence 1 267 м#[sup 2]
+
+              .catalog__admission
+                .catalog__admission-date нет даты поступления
+                .catalog__close-this-item
+
+
+            .catalog__result-item
+
+              .catalog__vendor-code GIL091D
+
+              .catalog__item-descript
+                .catalog__img-container.catalog__img-container--expand
+                  img(src="img/item-photo-2.jpg" width="80" height="22" alt="Внешний вид")
+                .catalog__descript-container
+                  .catalog__item-name Плитка Gabi или#[br]наименование по длинее
+                  .catalog__characteristics
+                    .catalog__item-color Цвет: Серый
+                    .catalog__item-size Размер: 30х60
+
+              .catalog__packing
+                .catalog__packing-size 0,9300 м#[sup 2]/уп
+                .catalog__packing-completeness 5,00 шт/уп
+
+              .catalog__pack-weight 19,50 кг
+
+              .catalog__basic-price  11 294 руб/м#[sup 2]
+
+              .catalog__amount
+                .catalog__selection-unit
+                  .catalog__unit-type шт
+                  .catalog__selecting-area.catalog__selecting-area--disabled
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+                .catalog__selection-unit
+                  .catalog__unit-type м#[sup 2]
+                  .catalog__selecting-area
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+                .catalog__selection-unit
+                  .catalog__unit-type уп
+                  .catalog__selecting-area
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+              .catalog__total-price 1 365 828,37 руб.
+
+              .catalog__existence 1 267 м#[sup 2]
+
+              .catalog__admission
+                .catalog__admission-date нет даты поступления
+                .catalog__close-this-item
+
+
+            .catalog__result-item
+
+              .catalog__vendor-code GIL091D
+
+              .catalog__item-descript
+                .catalog__img-container
+                  img(src="img/item-photo-2.jpg" width="80" height="22" alt="Внешний вид")
+                .catalog__descript-container
+                  .catalog__item-name Плитка Gabi или#[br]наименование по длинее
+                  .catalog__characteristics
+                    .catalog__item-color Цвет: Серый
+                    .catalog__item-size Размер: 30х60
+
+              .catalog__packing
+                .catalog__packing-size 0,9300 м#[sup 2]/уп
+                .catalog__packing-completeness 5,00 шт/уп
+
+              .catalog__pack-weight 19,50 кг
+
+              .catalog__basic-price  11 294 руб/м#[sup 2]
+
+              .catalog__amount
+                .catalog__selection-unit
+                  .catalog__unit-type шт
+                  .catalog__selecting-area.catalog__selecting-area--disabled
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+                .catalog__selection-unit
+                  .catalog__unit-type м#[sup 2]
+                  .catalog__selecting-area
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+                .catalog__selection-unit
+                  .catalog__unit-type уп
+                  .catalog__selecting-area
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+              .catalog__total-price 1 365 828,37 руб.
+
+              .catalog__existence 1 267 м#[sup 2]
+
+              .catalog__admission
+                .catalog__admission-date нет даты поступления
+                .catalog__close-this-item
+
+
+            .catalog__result-item
+
+              .catalog__vendor-code GIL091D
+
+              .catalog__item-descript
+                .catalog__img-container
+                  img(src="img/item-photo-2.jpg" width="80" height="22" alt="Внешний вид")
+                .catalog__descript-container
+                  .catalog__item-name Плитка Gabi или#[br]наименование по длинее
+                  .catalog__characteristics
+                    .catalog__item-color Цвет: Серый
+                    .catalog__item-size Размер: 30х60
+
+              .catalog__packing
+                .catalog__packing-size 0,9300 м#[sup 2]/уп
+                .catalog__packing-completeness 5,00 шт/уп
+
+              .catalog__pack-weight 19,50 кг
+
+              .catalog__basic-price  11 294 руб/м#[sup 2]
+
+              .catalog__amount
+                .catalog__selection-unit
+                  .catalog__unit-type шт
+                  .catalog__selecting-area.catalog__selecting-area--disabled
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+                .catalog__selection-unit
+                  .catalog__unit-type м#[sup 2]
+                  .catalog__selecting-area
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+                .catalog__selection-unit
+                  .catalog__unit-type уп
+                  .catalog__selecting-area
+                    .catalog__selector.catalog__selector--minus
+                    input.catalog__selecting-value(type="text" name="selecting-value")
+                    .catalog__selector.catalog__selector--plus
+
+              .catalog__total-price 1 365 828,37 руб.
+
+              .catalog__existence 1 267 м#[sup 2]
+
+              .catalog__admission
+                .catalog__admission-date нет даты поступления
+                .catalog__close-this-item
+
+          .catalog__total-result-strut
+            .catalog__total-result.catalog__total-result--fixed
+              .catalog__total-inner-container
+                .catalog__total-result-data
+                  .catalog__result-data-table
+                    .catalog__result-data-h Доставка
+                    .catalog__result-table-container
+                      ul.catalog__unit-name
+                        li Город
+                        li Сумма доставки
+                        li Итого вес
+                      ul.catalog__unit-value
+                        li Саратов
+                        li 179 563,24
+                        li 24 568,39 кг
+                  .catalog__result-data-table
+                    .catalog__result-data-h Итоговый заказ
+                    .catalog__result-table-container
+                      ul.catalog__unit-name.catalog__unit-name--two
+                        li Артикулов в заказе
+                        li Итого цена
+                        li Итого цена с доставкой
+                      ul.catalog__unit-value
+                        li 23
+                        li 6 124 568,39 руб.
+                        li 6 634 508,09 руб.
+
+                .catalog__order-btn
+                  a.catalog__refresh(href="#" title="#") Обновить
+                  a.catalog__order-send(href="#" title="#") Отправить заказ
+
+    footer.main-footer
+      section.main-footer__info-container
+        a.main-footer__logo(href="/" title="#")
+          img(src="img/footer-logo.png" width="372" height="45" alt="Лого. Переход на главную страницу")
+        .main-footer__info-content
+
+          .main-footer__info-item.main-footer__info-item--schedule
+            .main-footer__info-heading Время работы
+            p Ежедневно: 9:00 - 21:00
+            p Время отгрузки: 10:00 - 20:00
+
+          .main-footer__info-item.main-footer__info-item--contacts
+            .main-footer__info-heading Наши контакты
+            p Адрес: Московская область, г. Подольск, пр. Юнных Ленинцев, д.41
+            a(href="tel:+74951234469" title="#") Телефон: +7 (495) 123-44-69
+            a(href="mailto:sosenki@mosplitka.ru" title="#") E-mail: sosenki@mosplitka.ru
+
+      nav.main-footer__footer-navigation
+        .main-footer__nav-inn-container
+          .main-footer__copyright 	&copy; Copyright 2017
+          ul.main-footer__nav
+            li
+              a(href="/" title="#") О компании
+            li
+              a(href="contacts.html" title="#") Адрес
+            li
+              a(href="contacts.html" title="#") Контакты
+            li
+              a(href="#" title="#") Политика конфиденциальности
+          .main-footer__social
+            a.main-footer__social-link.main-footer__social-link--twitter(href="#" title="#")
+            a.main-footer__social-link.main-footer__social-link--facebook(href="#" title="#")
+            a.main-footer__social-link.main-footer__social-link--linkedin(href="#" title="#")
+            a.main-footer__social-link.main-footer__social-link--instagram(href="#" title="#")
+            a.main-footer__social-link.main-footer__social-link--youtube(href="#" title="#")
+            a.main-footer__social-link.main-footer__social-link--google(href="#" title="#")
+            a.main-footer__social-link.main-footer__social-link--pinterest(href="#" title="#")
+
+    script(src="js/script.js")

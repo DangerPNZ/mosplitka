@@ -1,0 +1,268 @@
+doctype html
+html(lang="ru")
+
+  head
+    meta(charset="UTF-8")
+    link(href="css/style.css" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300i&amp;subset=cyrillic" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:700&amp;subset=cyrillic" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:300&amp;subset=cyrillic" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:400i&amp;subset=cyrillic" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:500&amp;subset=cyrillic" rel="stylesheet")
+    title Мосплитка
+  body
+    a(href="#top").scroll-top-btn
+    a(name="top")
+    header.main-header
+      a.main-logo(href="/" title="#")
+        img(src="./img/header-logo.png" width="182" height="22" alt="Лого. Ссылка на главную страницу")
+      nav  
+        ul.main-nav
+          li
+            a(href="catalog.html" title="#") Каталог
+          li
+            a(href="news.html" title="#") Новости
+          li
+            a(href="catalog-download.html" title="#") Скачать
+          li
+            a(href="orders.html" title="#") Сотрудничество
+          li
+            a(href="contacts.html" title="#") Карта дилеров
+          li
+            a(href="contacts.html" title="#") Контакты
+
+      a.main-header__call-us(href="tel:+78002501080" title="#") 8 800 250 10 80
+      .main-header__custom-actions
+        a.main-header__search(href="#" title="#")
+        a.main-header__login(href="orders.html" title="#") Вход
+        a.main-header__my-basket(href="orders.html" title="#") 0
+
+    section.main-slider
+      //.main-slider__arrows-switch
+        div.main-slider__arrow.main-slider__arrow--left
+        div.main-slider__arrow.main-slider__arrow--right
+      //.main-slider__bullets-switch
+        input(type="radio" name="slider-switch")
+        input(type="radio" name="slider-switch")
+        input(type="radio" name="slider-switch")
+      .main-slider__inner-container
+
+        .main-slider__slide
+          .main-slider__slide-heading Дилер
+          .main-slider__slide-descript Новые коллекции Kerama Marazzi
+          .main-slider__links-container
+            a.main-slider__option.main-slider__option--view-link(href="#" title="#") Посмотреть
+            a.main-slider__option.main-slider__option--full-catalog-link(href="#" title="#") Весь каталог
+
+    .content
+      .login-form
+        .login-form__overflow
+        .login-form__container
+          .login-form__form
+            form(action="#")
+              .login-form__heading Вход в кабинет дилера
+              .login-form__input-area
+                input(type="email" name="mail" placeholder="E-mail:*" required)
+                input(type="password" name="password" placeholder="Пароль:*" required)
+              .login-form__entrance
+                a.login-form__entrance-btn Войти
+                input(type="checkbox" id="remember-me")
+                label(for="remember-me") Запомнить меня
+              .login-form__extra-links
+                a(href="" title="") Я забыл пароль
+                a(href="" title="") Отправить заявку на регистрацию
+
+      section.collections
+        .collections__heading Коллекции
+
+        .collections__inner-container
+
+          ul.collections__filter
+            li
+              a.collections__active-filter(href="#" title="#") Все
+            li
+              a(href="#" title="#") Камень
+            li
+              a(href="#" title="#") Дерево
+            li
+              a(href="#" title="#") Hi-tech
+            li
+              a(href="#" title="#") Еще параметр
+
+          .collections__items-container
+            .collections__item
+              img(src="img/collect.jpg" width="367" height="231" alt="Фото коллекции")
+              .collections__item-name Название коллекции
+              .collections__item-descript Две венеции
+
+            .collections__item
+              img(src="img/collect.jpg" width="367" height="231" alt="Фото коллекции")
+              .collections__item-name Название коллекции
+              .collections__item-descript Две венеции
+
+            .collections__item
+              img(src="img/collect.jpg" width="367" height="231" alt="Фото коллекции")
+              .collections__item-name Название коллекции
+              .collections__item-descript Две венеции
+
+            .collections__item
+              img(src="img/collect.jpg" width="367" height="231" alt="Фото коллекции")
+              .collections__item-name Название коллекции
+              .collections__item-descript Две венеции
+
+            .collections__item
+              img(src="img/collect.jpg" width="367" height="231" alt="Фото коллекции")
+              .collections__item-name Название коллекции
+              .collections__item-descript Две венеции
+
+            .collections__item
+              img(src="img/collect.jpg" width="367" height="231" alt="Фото коллекции")
+              .collections__item-name Название коллекции
+              .collections__item-descript Две венеции
+
+            .collections__item
+              img(src="img/collect.jpg" width="367" height="231" alt="Фото коллекции")
+              .collections__item-name Название коллекции
+              .collections__item-descript Две венеции
+
+            .collections__item
+              img(src="img/collect.jpg" width="367" height="231" alt="Фото коллекции")
+              .collections__item-name Название коллекции
+              .collections__item-descript Две венеции
+
+            .collections__item
+              img(src="img/collect.jpg" width="367" height="231" alt="Фото коллекции")
+              .collections__item-name Название коллекции
+              .collections__item-descript Две венеции
+
+        a.show-more-link(href="#" title="#")
+          .show-more-link__text Показать ещё
+
+      .philosophy(style="background: url(img/philo-bg.jpg) no-repeat")
+        .philosophy__inner-container
+          .philosophy__heading Философия компании
+          .philosophy__sub-heading Наши партнеры согласны с нашими принципами
+
+          .philosophy__content
+            p Философия нашей компании заключается в качестве работы.
+            p Мы очень внимательно подходим к выбору наших партнеров и требуем от них полного соблюдения стандартов,
+              #[br] которых придерживаемся сами.
+            p Для нас важна каждая деталь, начиная от менеджера, который общается с клиентом, заканчивая залами, где
+              #[br] представлена наша продукция. Именно поэтому клиенты наших дилеров всегда остаются довольны своим
+              #[br] выбором, полученой консультацией, а все их потребности полностью удовлетворены.
+
+      .news
+
+        .page-header
+          .page-header__inner-container
+            .page-header__name Новости
+
+        .news__items-container
+          .news__item
+            img(src="img/news-bg.jpg" width="570" height="359" alt="Изображение к новости")
+            .news__content-container
+              .news__item-heading Заключили контракт с производителем сантехники Bocchi - сантехника
+              .news__tags
+                a(href="#" title="#") Контракт,
+                a(href="#" title="#") Новый продукт
+              .news__descript
+                p Bocchi - знаменитая итальянская компания - основатель кластера продукции для ванной комнаты, который радует новинками и технологиями уже 67 лет. С момента основания в 1950 году Bocchi всегда стремилась быть творческой и инновационной компанией, которая прислушивается к своим клиентам и воплощает их мечты о дизайне и комфорте.
+              .news__add-info
+                .news__news-date 04/12/2017
+                a.news__to-full-news(href="#" title="#") Подробнее
+
+          .news__item
+            img(src="img/news-bg.jpg" width="570" height="359" alt="Изображение к новости")
+            .news__content-container
+              .news__item-heading На склад в подольск прибыли 6 коллекций marazzi - плитка
+              .news__tags
+                a(href="#" title="#") Поступление,
+                a(href="#" title="#") Плитка,
+                a(href="#" title="#") Marazzi
+              .news__descript
+                p Уважаемые коллеги,
+                  #[br] Сегодня, в Италии, на фабрике  MARAZZI(RAGNO), был загружен один контейнер.
+                p Прошу обратить внимание на З\П 0079 , в котором присутствуют не
+                  #[br] только складские позиции, но и заказные артикулы.
+                p Всем хороших продаж и отличного настроения!
+              .news__add-info
+                .news__news-date 04/17/2017
+                a.news__to-full-news(href="#" title="#") Подробнее
+
+          .news__item
+            img(src="img/news-bg.jpg" width="570" height="359" alt="Изображение к новости")
+            .news__content-container
+              .news__item-heading На склад в подольск прибыли 6 коллекций marazzi - плитка
+              .news__tags
+                a(href="#" title="#") Поступление,
+                a(href="#" title="#") Плитка,
+                a(href="#" title="#") Marazzi
+              .news__descript
+                p Уважаемые коллеги,
+                  #[br] Сегодня, в Италии, на фабрике  MARAZZI(RAGNO), был загружен один контейнер.
+                p Прошу обратить внимание на З\П 0079 , в котором присутствуют не
+                  #[br] только складские позиции, но и заказные артикулы.
+                p Всем хороших продаж и отличного настроения!
+              .news__add-info
+                .news__news-date 04/17/2017
+                a.news__to-full-news(href="#" title="#") Подробнее
+
+        a.show-more-link(href="#" title="#")
+          .show-more-link__text Все новости
+
+    nav.extra-menu
+      a.extra-menu__item.extra-menu__item--become-a-dealer(href="#" title="")
+        .extra-menu__bg-container(style="background: #eee url(img/dealer-bg.jpg) no-repeat; background-size: contain; background-position: center center;")
+        .extra-menu__descript
+          div Стать дилером
+
+      a.extra-menu__item.extra-menu__item--storage-photo(href="#" title="")
+        .extra-menu__bg-container(style="background: #d4e5f3 url(img/storage-bg.jpg) no-repeat; background-size: contain; background-position: center center;")
+        .extra-menu__descript
+          div Фото склада
+
+      a.extra-menu__item.extra-menu__item--see-catalog(href="catalog-download.html" title="")
+        .extra-menu__bg-container(style="background: #f3f4f5 no-repeat; background-size: contain; background-position: center center;")
+        .extra-menu__descript
+          div Посмотреть каталог
+
+    footer.main-footer
+      section.main-footer__info-container
+        a.main-footer__logo(href="/" title="#")
+          img(src="img/footer-logo.png" width="372" height="45" alt="Лого. Переход на главную страницу")
+
+        .main-footer__info-content
+
+          .main-footer__info-item.main-footer__info-item--schedule
+            .main-footer__info-heading Время работы
+            p Ежедневно: 9:00 - 21:00
+            p Время отгрузки: 10:00 - 20:00
+
+          .main-footer__info-item.main-footer__info-item--contacts
+            .main-footer__info-heading Наши контакты
+            p Адрес: Московская область, г. Подольск, пр. Юнных#[br] Ленинцев, д.41
+            a(href="tel:+74951234469" title="#") Телефон: +7 (495) 123-44-69
+            a(href="mailto:sosenki@mosplitka.ru" title="#") E-mail: sosenki@mosplitka.ru
+
+      nav.main-footer__footer-navigation
+        .main-footer__nav-inn-container
+          .main-footer__copyright 	&copy; Copyright 2017
+          ul.main-footer__nav
+            li
+              a(href="/" title="#") О компании
+            li
+              a(href="contacts.html" title="#") Адрес
+            li
+              a(href="contacts.html" title="#") Контакты
+            li
+              a(href="#" title="#") Политика конфиденциальности
+          .main-footer__social
+            a.main-footer__social-link.main-footer__social-link--twitter(href="#" title="#")
+            a.main-footer__social-link.main-footer__social-link--facebook(href="#" title="#")
+            a.main-footer__social-link.main-footer__social-link--linkedin(href="#" title="#")
+            a.main-footer__social-link.main-footer__social-link--instagram(href="#" title="#")
+            a.main-footer__social-link.main-footer__social-link--youtube(href="#" title="#")
+            a.main-footer__social-link.main-footer__social-link--google(href="#" title="#")
+            a.main-footer__social-link.main-footer__social-link--pinterest(href="#" title="#")

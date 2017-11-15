@@ -1,0 +1,53 @@
+.catalog-header
+  width 100%
+  border-top 1px solid #eaeaea
+  border-bottom 1px solid #eaeaea
+
+.catalog-header__inner-container
+  display flex
+  justify-content space-between
+  width 1138px
+  margin 0 auto
+  padding 34px 0 28px 0
+
+.catalog-header__heading
+  Roboto(400, 22px)
+  color dark-text
+  text-transform uppercase
+
+.catalog-header__helpers
+  display flex
+  flex-direction column
+  min-width 565px
+
+.catalog-header__helper
+  display flex
+  Roboto(normal, 12px)
+  color dark-text
+  &:nth-child(1)
+    margin-bottom: 7px
+
+.catalog-header__helper-post
+  width 155px
+  text-align right
+
+.catalog-header__helper-info
+  display flex
+  justify-content flex-end
+  flex-grow 1
+  Roboto(400, 12px)
+
+.catalog-header__helper-info *
+  position relative
+  margin-left 18px
+  letter-spacing 0.3px
+
+  &:not(:last-child)
+    &::before
+      content "/"
+      display block
+      position absolute
+      right -11px
+
+.catalog-header__helper-info a
+  color light-blue

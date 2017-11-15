@@ -1,0 +1,136 @@
+.contacts__feedback
+  display flex
+  justify-content space-between
+  width 100%
+  padding 31px 0 65px 0
+
+.contacts__info
+  width 387px
+
+.contacts__info-heading
+  Roboto(normal, 17px)
+  text-transform uppercase
+  color dark-text
+  margin-bottom 33px
+  letter-spacing 1.5px
+
+.contacts__info-explanation
+  Roboto(400, 14px)
+  color dark-gray
+  line-height 22px
+  width 335px
+  letter-spacing 0.5px
+
+.contacts__info-elements
+  Roboto(normal, 14px)
+  color dark-text
+  margin-top 50px
+
+.contacts__info-item
+  display flex
+  line-height 26px
+  letter-spacing 0.8px
+
+  a
+    color dark-text
+    padding-left 5px
+
+a.contacts__contact-mail
+  color carrot
+
+.contacts__feedback-form
+  display flex
+  border-left 1px solid #e6e6e6
+  width 755px
+
+  form
+    display flex
+    flex-direction column
+    padding-left 21px
+
+  textarea
+    border none
+    background #ececec
+    Roboto(400, 13px)
+    padding 13px 5px 15px 20px
+    resize none
+
+.contacts__form-heading
+  Roboto(normal, 17px)
+  text-transform uppercase
+  color dark-text
+  letter-spacing 1.5px
+
+.contacts__client-data
+  display flex
+  flex-wrap wrap
+  justify-content space-between
+  margin-top 35px
+  width 732px
+
+.contacts__input-container
+  position relative
+
+  &--client-name::before
+    content ""
+    display block
+    width 19px
+    height 19px
+    position absolute
+    top 11px
+    right 10px
+    background url(/img/sprites/spritesheet.png) -5px -303px
+
+  &--city::before
+    content ""
+    display block
+    width 15px
+    height 20px
+    position absolute
+    top 11px
+    right 13px
+    background url(/img/sprites/spritesheet.png) -5px -104px
+
+  &--client-mail::before
+    content ""
+    display block
+    width 20px
+    height 13px
+    position absolute
+    top 14px
+    right 10px
+    background url(/img/sprites/spritesheet.png) -5px -280px
+
+  &--client-tel::before
+    content ""
+    display block
+    width 17px
+    height 22px
+    position absolute
+    top 8px
+    right 14px
+    background url(/img/sprites/spritesheet.png) -5px -332px
+
+  input
+    width 345px
+    margin-bottom 22px
+    border none
+    background #ececec
+    Roboto(400, 13px)
+    padding 13px 35px 15px 20px
+
+
+  &:nth-child(2n)
+    input
+      width 364px !important
+      margin-left auto
+
+.contacts__send-message
+  margin 25px auto 0 0
+  Roboto(normal, 13px)
+  text-transform uppercase
+  color #fff
+  background carrot
+  padding 15px 20px 17px 20px
+  letter-spacing 1.3px
+  border none

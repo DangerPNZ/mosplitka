@@ -1,0 +1,146 @@
+.main-footer
+  display flex
+  flex-direction column
+  padding-top 60px
+  background dark-text
+
+.main-footer__info-container
+  display flex
+  flex-direction column
+  padding-bottom 13px
+
+.main-footer__logo
+  margin 0 auto
+
+.main-footer__info-content
+  display flex
+  width 1138px
+  margin 0 auto
+  padding-top 95px
+
+.main-footer__info-item
+  display flex
+  flex-direction column
+  position relative
+
+  &--schedule
+    width 50%
+    padding-left 195px
+
+    ::before
+      content ""
+      display block
+      width 39px
+      height 39px
+      position absolute
+      top 4px
+      left 135px
+      background url(/img/sprites/spritesheet.png) -5px -134px
+
+  &--contacts
+    width 50%
+    padding-left: 205px
+    ::before
+      content ""
+      display block
+      width 35px
+      height 38px
+      position absolute
+      top 6px
+      left 148px
+      background url(/img/sprites/spritesheet.png) -5px -29px
+  p,
+  a
+    Roboto(400, 12px)
+    color #fff
+    line-height 18px
+
+.main-footer__info-heading
+  Roboto(normal, 18px)
+  text-transform uppercase
+  color carrot
+  margin-bottom 8px
+
+.main-footer__footer-navigation
+  width 100%
+  padding 40px 0
+  border-top 1px solid #3b3b3b
+  border-bottom 1px solid #3b3b3b
+
+.main-footer__nav-inn-container
+  display flex
+  justify-content space-between
+  width 1138px
+  margin 0 auto
+
+.main-footer__nav
+  display flex
+  padding-left 50px
+  flex-wrap wrap
+
+  li
+    position relative
+
+    &:not(:last-child)::before
+      content ""
+      display block
+      position absolute
+      top 2px
+      right 0
+      width 1px
+      height 15px
+      background #fafafa
+  a
+    position relative
+    Roboto(400, 14px)
+    color #fafafa
+    padding 0 22px
+
+.main-footer__copyright
+  Roboto(400, 14px)
+  color #fafafa
+
+.main-footer__social
+  display flex
+
+
+.main-footer__social-link
+  position relative
+  margin 0 15px
+  &::before
+    content ""
+    display block
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    margin: auto;
+  &--twitter::before
+    width 17px
+    height 14px
+    background url(/img/sprites/spritesheet.png) 0px -539px
+  &--facebook::before
+    width 8px
+    height 16px
+    background url(/img/sprites/spritesheet.png) 0px -457px
+  &--linkedin::before
+    width 14px
+    height 15px
+    background url(/img/sprites/spritesheet.png) 0px -489px
+  &--instagram::before
+    width 17px
+    height 16px
+    background url(/img/sprites/spritesheet.png) 0px -505px
+  &--youtube::before
+    width 17px
+    height 12px
+    background url(/img/sprites/spritesheet.png) 0px -554px
+  &--google::before
+    width 17px
+    height 14px
+    background url(/img/sprites/spritesheet.png) 0px -474px
+  &--pinterest::before
+    width 14px
+    height 16px
+    background url(/img/sprites/spritesheet.png) 0px -522px

@@ -1,0 +1,26 @@
+.scroll-top-btn
+  position fixed
+  bottom 76px
+  right 7vw
+  width 42px
+  height 42px
+  background rgba(243, 81, 69, 0.5)
+  border 1px solid #fff
+  cursor pointer
+  z-index 50
+
+  &:hover
+    background carrot
+
+  &::before
+    content ""
+    display block
+    width 23px
+    height 15px
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    margin: auto;
+    background url(/img/sprites/spritesheet.png) -5px -414px
